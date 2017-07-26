@@ -1,0 +1,20 @@
+class MyException extends Exception
+{
+String info;
+public MyException(String in)
+{this.info=in;
+System.out.println(info);
+}
+}
+
+class demo5userex1
+{
+public static void main(String arg[]) throws MyException
+{
+try{
+throw new MyException("Hey its my own exception");
+}catch(MyException e){}
+System.out.println("bye");
+System.out.println(" good ba bye");
+}
+}
